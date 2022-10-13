@@ -244,9 +244,9 @@
 
 
                                 <!---   city data   --->
-                                @foreach ($storecity as $city)
+                                <!-- @foreach ($storecity as $city)
                                     <option value="{{ $city->id }}">{{ $city->name }}</option>
-                                @endforeach
+                                @endforeach -->
                                 <!---   city data   --->
 
 
@@ -266,7 +266,7 @@
 
                             <p>G – 55, Ground Floor, 
                             Select City Walk, New Delhi - 110017</p>
-                            <a class="getdirectionbtn" href="https://www.google.com/maps/place/Maison+Des+Parfums/@28.528447,77.218974,17z/data=!3m1!4b1!4m5!3m4!" target="_blank" >Get direction</a>
+                            <a class="getdirectionbtn" href="https://goo.gl/maps/tP1LVHUKNT7TPQ826" target="_blank" >Get direction</a>
                              <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                              <hr>
@@ -277,7 +277,7 @@
 
                         <p>F-15A, 1st Floor, Palladium Mall, Lower Parel, Mumbai - 400013</p>
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/Maison+Des+Parfums/@18.9949051,72.8245914,17z/data=!3m1!4b1!4m5!3m" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://goo.gl/maps/kjXthHPB386uCRASA" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
                          <hr>
 
@@ -287,7 +287,7 @@
 
                         <p>F-32, 1st Floor, Jio World Drive Mall, Bandra Kurla Complex, Bandra East, Mumbai - 400051</p>
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/Maison+Des+Parfums+Jio+world+drive/@19.05313,72.8496273,17z/data=!" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://goo.gl/maps/XS1GBzKmFbcrmuYdA" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                          <hr>
@@ -297,7 +297,7 @@
 
                         <p>Domestic Airport ,Jessore Rd, Dum Dum, Kolkata, West Bengal - 700052</p>
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/Netaji+Subhash+Chandra+Bose+International+Airport/@22.6531496,88.4" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://goo.gl/maps/wzZTCBUyP2HqKWUMA" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                          <hr>
@@ -307,7 +307,7 @@
 
                         <p>Gr Floor, Inorbit Mall, New Link Rd, Malad West, Mumbai, Maharashtra 400064</p> 
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/Inorbit+Mall(India)+Pvt.+Ltd,+Malad,+Mindspace,+Malad+West,+Mumbai" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://goo.gl/maps/szj9RNkifytzGZ9M8" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                          <hr>
@@ -317,7 +317,7 @@
                         <p>Ground Floor Alembic Rd, Opposite to Alembic School,
                              Gorwa, Vadodara, Gujarat-390023 </p> 
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/Inorbit+Mall+Vadodara/@22.3223271,73.1655842,17z/data=!3m1!4b1!4m5" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://g.page/inorbitvadodara?share" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                          <hr>
@@ -327,7 +327,7 @@
 
                         <p>VR Mall unit no. K03 Upper Ground Floor Medical Square Nagpur: 440003</p> 
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/VR+Mall/@21.1326898,79.0960455,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://goo.gl/maps/jCezqyf6Wb9U9xkL8" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                          <hr>
@@ -338,29 +338,7 @@
 
                         <p>World Trade Park, B-Block, 1st Floor, Near to Shoppers Stop, Jawahar Lal Nehru Marg, Jaipur – 302017.</p> 
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/World+Trade+Park/@26.853021,75.8046688,17z/data=!3m1!4b1!4m5!3m4!1" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-
-                            <p class="mt-3"><b>INORBIT MALL, VADODARA</b></p>
-
-                        <p>Ground Floor Alembic Rd, Opposite to Alembic School, Gorwa, Vadodara, Gujarat-390023 </p> 
-
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/Inorbit+Mall+Vadodara/@22.3223271,73.1655842,17z/data=!3m1!4b1!4m5" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-
-                        <p class="mt-3"><b>WORLD TRADE PARK, JAIPUR</b></p>
-
-                        <p>World Trade Park, B-Block, 
-                            1st Floor,Near to Shoppers Stop, 
-                             Jawahar Lal Nehru Marg, Jaipur – 302017.</p> 
-
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/World+Trade+Park/@26.853021,75.8046688,17z/data=!3m1!4b1!4m5!3m4!1" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://g.page/APNAWTP?share" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                          <hr>
@@ -371,7 +349,7 @@
                             Cochin International Airport Limited, 
                             Aluva, Ernakulam, Kerala - 683111</p> 
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/Cochin+International+Airport/@10.1517834,76.392958,17z/data=!3m1!4" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://g.page/CochinInternationalAirport?share" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                          <hr>
@@ -383,7 +361,7 @@
                                     23, Moledina Road,Camp, 
                                     Pune Maharashtra 411001</p> 
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/SGS+Mall,+231,+Moledina+Rd,+Camp,+Pune,+Maharashtra+411001/@18.519" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://goo.gl/maps/tv3LgFP9XD72s5Ud6" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                          <hr>
@@ -394,7 +372,7 @@
                                 <p>Ground floor behind life style store, 
                                     Civil Lines, Kanpur, uttar Pardesh 208001.</p> 
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/Z+Square+Mall/@26.4732721,80.352673,17z/data=!3m1!4b1!4m5!3m4!1s0x" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://goo.gl/maps/iqhYuYQPJL4kRm3W6" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                          <hr>
@@ -404,7 +382,7 @@
                             Rajinder Nagar, Amritsar, Maqbool Pura, 
                             Amritsar Punjab :143 001.</p> 
 
-                        <a class="getdirectionbtn" href="https://www.google.com/maps/place/Nexus+Amritsar/@31.6197701,74.9054437,17z/data=!3m2!4b1!5s0x39197c" target="_blank" >Get direction</a>
+                        <a class="getdirectionbtn" href="https://goo.gl/maps/wgeumGGi9ZUpramQ7" target="_blank" >Get direction</a>
                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link " href="javascript: void(0);" >Store Details</a>
 
                        
@@ -413,7 +391,7 @@
                          <p class="mt-3"><b>Ambuja Mall, Raipur</b></p>
                          <p>Ambuja Mall Ground Floor Ambuja City Centre Vidhan...</p> 
  
-                         <a class="getdirectionbtn" href="https://www.google.com/maps/d/u/0/embed?mid=19f9bWKPWoHTxV0eoy_yJoSWCJTvLCRk&ehbc=2E312F" width="100" target="_blank" >Get direction</a>
+                         <a class="getdirectionbtn" href="https://g.page/AmbujaMall?share" width="100" target="_blank" >Get direction</a>
                           <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link " href="javascript: void(0);" >Store Details</a>
  
 
@@ -422,7 +400,7 @@
                           <p class="mt-3"><b>MBD Neopolis Mall, Jalandhar</b></p>
                           <p>BS Jalandhar Opp Desh Dhagat Yaadgaar Halls BMC Ch...</p> 
   
-                          <a class="getdirectionbtn" href="https://www.google.com/maps/d/u/0/embed?mid=1UPaIwmPGrGHOVZAokmZLljfJELn8CvY&ehbc=2E312F" width="100" target="_blank" >Get direction</a>
+                          <a class="getdirectionbtn" href="https://goo.gl/maps/BL9Zu2Kq7VZgHv4E8" width="100" target="_blank" >Get direction</a>
                            <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link " href="javascript: void(0);" >Store Details</a>
  
                            
@@ -431,7 +409,7 @@
                            <p class="mt-3"><b>Nashik City Mall</b></p>
                            <p>Nashik City Mall Upper Ground Floor Sambhaji Chowk...</p> 
    
-                           <a class="getdirectionbtn" href="https://www.google.com/maps/d/u/0/embed?mid=1amapMs_MhceO9AfYCfn1B35YTvGTws0&ehbc=2E312F" width="100" target="_blank" >Get direction</a>
+                           <a class="getdirectionbtn" href="https://goo.gl/maps/Cx8suZnEx7gYxuCp7" width="100" target="_blank" >Get direction</a>
                             <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link " href="javascript: void(0);" >Store Details</a>
    
                     </div>
@@ -533,12 +511,7 @@ $(".button_1").click(function(e) {
             id: $(this).val(), // < note use of 'this' here
             access_token: $("#access_token").val()
         },
-        // success: function(result) {
-        //     alert('ok');
-        // },
-        // error: function(result) {
-        //     alert('error');
-        // }
+
     });
 });
 
