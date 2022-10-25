@@ -34,8 +34,8 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         @media (min-width: 576px){
-            .modal-dialog {
-              max-width: 964px !important;
+           .store-modal .modal-dialog {
+              max-width: 1300px !important;
               margin: 4.75rem auto !important;
             /* margin-right: 20px !important; */
              }
@@ -65,21 +65,25 @@
             float: left;
             padding: 3%;
         }
-        .btn-close{
-            float: right;
-            font-size: 24px;
-            background: #ff003e;
-            opacity: 1;
-            border-radius: 50%;
-            position: absolute;
-            top: -12px;
-            right: -13px;
-            color: #fff !important;
+       .store-modal .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: Transparent !important;
+        background-clip: padding-box;
+        border: 0 !important;
+        border-radius: none !important;
+        outline: 0;
         }
-        .btn-close span{
-            position: absolute;
-            top: 0px;
-            left: 11px;
+
+        .store-modal .modal{
+            top:-40px !important;
+        }   
+
+        .store-modal {
+            background:#00000060 !important;
         }
 
         .prev{
@@ -92,14 +96,7 @@
                 right: 0;
                  top: 45%
         }
-        .close{
-                position: absolute;
-    top: 0;
-    right: 3px;
-    font-size: 32px;
-    line-height: 32px;
-        z-index: 2;
-        }
+        
     </style>
 </head>
 
@@ -144,9 +141,7 @@
   </div>
 </div>
 
-
-
-                            </div>
+</div>
             </nav>
         </div>
         <div class="secondnav">
@@ -447,7 +442,7 @@
 
 
     <div class="modal-content">
-        {{-- <span class="close">&times;</span> --}}
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body">
           <div class="container">
             <div class="slideshow-container">
