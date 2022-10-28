@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 13, 2022 at 11:59 AM
+-- Generation Time: Oct 28, 2022 at 08:48 AM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,69 @@ SET time_zone = "+00:00";
 --
 -- Database: `beuty_concept`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `addresses_images`
+--
+
+CREATE TABLE `addresses_images` (
+  `id` int(255) NOT NULL,
+  `address_id` int(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `update_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `addresses_images`
+--
+
+INSERT INTO `addresses_images` (`id`, `address_id`, `image`, `created_at`, `update_at`) VALUES
+(1, 4, 'image/Beauty-Scentiments-Nagpur/IMG_20220519_201356.jpg', '2022-10-27 10:41:14', '2022-10-28 05:08:06'),
+(2, 4, 'image/Beauty-Scentiments-Nagpur/IMG_20220519_201418.jpg', '2022-10-27 10:41:14', '2022-10-28 05:08:13'),
+(3, 4, 'image/Beauty-Scentiments-Nagpur/IMG_20220527_162025.jpg', '2022-10-27 12:22:17', '2022-10-28 05:08:20'),
+(4, 4, 'image/Beauty-Scentiments-Nagpur/IMG_20220527_162121.jpg', '2022-10-27 12:22:17', '2022-10-28 05:08:25'),
+(5, 6, 'image/Beauty-Scentimemts-Vadodara/IMG_20221013_141828818.jpg', '2022-10-28 05:13:04', '2022-10-28 05:15:14'),
+(6, 6, 'image/Beauty-Scentimemts-Vadodara/IMG_20221013_141853554_HDR.jpg', '2022-10-28 05:13:04', '2022-10-28 05:15:17'),
+(7, 5, 'image/Beauty-Scentiments-Jaipur/IMG_20221014_183549896.jpg', '2022-10-28 05:16:31', '2022-10-28 05:16:31'),
+(8, 5, 'image/Beauty-Scentiments-Jaipur/IMG_20221014_183621951.jpg', '2022-10-28 05:16:31', '2022-10-28 05:16:31'),
+(9, 9, 'image/BSPune/IMG20221013140947.jpg', '2022-10-28 05:20:50', '2022-10-28 05:20:50'),
+(10, 9, 'image/BSPune/IMG20221013141004.jpg', '2022-10-28 05:20:50', '2022-10-28 05:20:50'),
+(11, 9, 'image/BSPune/IMG20221013141036.jpg', '2022-10-28 05:20:50', '2022-10-28 05:20:50'),
+(12, 10, 'image/Beauty-Scentiments-Kanpur/20221013_170733.jpg', '2022-10-28 05:22:50', '2022-10-28 05:22:50'),
+(13, 10, 'image/Beauty-Scentiments-Kanpur/20221013_170758.jpg', '2022-10-28 05:22:50', '2022-10-28 05:22:50'),
+(14, 10, 'image/Beauty-Scentiments-Kanpur/20221013_170813.jpg', '2022-10-28 05:22:50', '2022-10-28 05:22:50'),
+(15, 11, 'image/BSAmritsar/IMG-20221014-WA0022.jpg', '2022-10-28 05:26:09', '2022-10-28 05:26:09'),
+(16, 11, 'image/BSAmritsar/IMG-20221014-WA0023.jpg', '2022-10-28 05:26:09', '2022-10-28 05:26:09'),
+(17, 11, 'image/BSAmritsar/IMG-20221014-WA0024.jpg', '2022-10-28 05:26:09', '2022-10-28 05:26:09'),
+(18, 7, 'image/Beauty-Luxe-Kochin _ Kolkata/Kolkata/Beaute-Luxe-Kolkata-1.jpg', '2022-10-28 05:31:24', '2022-10-28 05:31:24'),
+(19, 7, 'image/Beauty-Luxe-Kochin _ Kolkata/Kolkata/Beaute-Luxe-Kolkata-2.jpg', '2022-10-28 05:31:24', '2022-10-28 05:31:24'),
+(20, 7, 'image/Beauty-Luxe-Kochin _ Kolkata/Kolkata/Beaute-Luxe-Kolkata-3.jpg', '2022-10-28 05:31:24', '2022-10-28 05:31:24'),
+(21, 7, 'image/Beauty-Luxe-Kochin _ Kolkata/Kolkata/Beaute-Luxe-Kolkata-4.jpg', '2022-10-28 05:31:24', '2022-10-28 05:31:24'),
+(22, 7, 'image/Beauty-Luxe-Kochin _ Kolkata/Kolkata/Beaute-Luxe-Kolkata-5.jpg', '2022-10-28 05:31:24', '2022-10-28 05:31:24'),
+(23, 7, 'image/Beauty-Luxe-Kochin _ Kolkata/Kolkata/Beaute-Luxe-Kolkata-6.jpg', '2022-10-28 05:31:24', '2022-10-28 05:31:24'),
+(24, 8, 'image/Beauty-Luxe-Kochin _ Kolkata/Cochin/Beaute-Luxe-Cochin-1.jpg', '2022-10-28 05:37:11', '2022-10-28 05:37:11'),
+(25, 8, 'image/Beauty-Luxe-Kochin _ Kolkata/Cochin/Beaute-Luxe-Cochin-2.jpg', '2022-10-28 05:37:11', '2022-10-28 05:37:11'),
+(26, 8, 'image/Beauty-Luxe-Kochin _ Kolkata/Cochin/Beaute-Luxe-Cochin-3.jpg', '2022-10-28 05:37:11', '2022-10-28 05:37:11'),
+(27, 8, 'image/Beauty-Luxe-Kochin _ Kolkata/Cochin/Beaute-Luxe-Cochin-4.jpg', '2022-10-28 05:37:11', '2022-10-28 05:37:11'),
+(28, 8, 'image/Beauty-Luxe-Kochin _ Kolkata/Cochin/Beaute-Luxe-Cochin-5.jpg', '2022-10-28 05:37:11', '2022-10-28 05:37:11'),
+(29, 8, 'image/Beauty-Luxe-Kochin _ Kolkata/Cochin/Beaute-Luxe-Cochin-6.jpg', '2022-10-28 05:37:11', '2022-10-28 05:37:11'),
+(30, 12, 'image/Meauty-Luxe-Malad/malad-1.jpeg', '2022-10-28 05:43:20', '2022-10-28 05:44:47'),
+(31, 12, 'image/Meauty-Luxe-Malad/malad-2.jpeg', '2022-10-28 05:43:20', '2022-10-28 05:44:44'),
+(32, 12, 'image/Meauty-Luxe-Malad/malad-3.jpeg', '2022-10-28 05:43:20', '2022-10-28 05:44:41'),
+(33, 12, 'image/Meauty-Luxe-Malad/malad-4.jpeg', '2022-10-28 05:43:20', '2022-10-28 05:44:37'),
+(34, 12, 'image/Meauty-Luxe-Malad/malad-5.jpeg', '2022-10-28 05:43:20', '2022-10-28 05:44:34'),
+(35, 12, 'image/Meauty-Luxe-Malad/malad-6.jpeg', '2022-10-28 05:43:20', '2022-10-28 05:44:31'),
+(37, 1, 'image/Meauty-Luxe-Malad/malad-1.jpeg', '2022-10-28 05:20:50', '2022-10-28 06:43:24'),
+(38, 1, 'image/Meauty-Luxe-Malad/malad-2.jpeg', '2022-10-28 05:20:50', '2022-10-28 06:43:30'),
+(39, 1, 'image/Meauty-Luxe-Malad/malad-3.jpeg', '2022-10-28 05:20:50', '2022-10-28 06:43:35'),
+(40, 2, 'image/BSAmritsar/IMG-20221014-WA0022.jpg', '2022-10-28 05:26:09', '2022-10-28 05:26:09'),
+(41, 2, 'image/BSAmritsar/IMG-20221014-WA0023.jpg', '2022-10-28 05:26:09', '2022-10-28 05:26:09'),
+(42, 2, 'image/BSAmritsar/IMG-20221014-WA0024.jpg', '2022-10-28 05:26:09', '2022-10-28 05:26:09'),
+(43, 3, 'image/Beauty-Scentimemts-Vadodara/IMG_20221013_141828818.jpg', '2022-10-28 05:13:04', '2022-10-28 05:15:14'),
+(44, 3, 'image/Beauty-Scentimemts-Vadodara/IMG_20221013_141853554_HDR.jpg', '2022-10-28 05:13:04', '2022-10-28 05:15:17');
 
 -- --------------------------------------------------------
 
@@ -50,10 +113,7 @@ INSERT INTO `cities` (`id`, `store_id`, `name`, `created_at`, `updated_at`) VALU
 (8, 2, 'Pune', NULL, NULL),
 (9, 2, 'Kanpur', NULL, NULL),
 (10, 2, 'Amritsar', NULL, NULL),
-(13, 3, 'Mumbai', NULL, NULL),
-(14, 2, 'Raipur', NULL, NULL),
-(15, 2, 'Jalandhar', NULL, NULL),
-(16, 2, 'Nashik', NULL, NULL);
+(13, 3, 'Mumbai', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -211,10 +271,7 @@ INSERT INTO `maps` (`id`, `store_id`, `city_id`, `ifram`, `created_at`, `updated
 (10, 2, 8, '<iframe src=\"https://www.google.com/maps/d/u/0/embed?mid=1u80-VWny-GyVyGqzi2qXJD2Nmf0ells&ehbc=2E312F\" width=\"100%\" height=\"600\"></iframe>', NULL, NULL),
 (11, 2, 9, '<iframe src=\"https://www.google.com/maps/d/u/0/embed?mid=1BmJMV2dz_CZvgTHj46QWLVTu7lBcuO0&ehbc=2E312F\" width=\"100%\" height=\"600\"></iframe>', NULL, NULL),
 (12, 2, 10, '<iframe src=\"https://www.google.com/maps/d/u/0/embed?mid=1KPGMDqPUzfooTMu4UVyZXqSFQ5IHwkU&ehbc=2E312F\" width=\"100%\" height=\"600\"></iframe>', NULL, NULL),
-(14, 3, 13, '<iframe src=\"https://www.google.com/maps/d/u/0/embed?mid=138MWx3S15pUm24uH6XfpePUg7IbMf2I&ehbc=2E312F\" width=\"100%\" height=\"600\"></iframe>', NULL, NULL),
-(15, 2, 14, '<iframe src=\"https://www.google.com/maps/d/u/0/embed?mid=19f9bWKPWoHTxV0eoy_yJoSWCJTvLCRk&ehbc=2E312F\" width=\"100%\" height=\"600\"></iframe>', NULL, NULL),
-(16, 2, 15, '<iframe src=\"https://www.google.com/maps/d/u/0/embed?mid=1UPaIwmPGrGHOVZAokmZLljfJELn8CvY&ehbc=2E312F\" width=\"100%\" height=\"600\"></iframe>', NULL, NULL),
-(17, 2, 16, '<iframe src=\"https://www.google.com/maps/d/u/0/embed?mid=1amapMs_MhceO9AfYCfn1B35YTvGTws0&ehbc=2E312F\" width=\"100%\" height=\"600\"></iframe>', NULL, NULL);
+(14, 3, 13, '<iframe src=\"https://www.google.com/maps/d/u/0/embed?mid=138MWx3S15pUm24uH6XfpePUg7IbMf2I&ehbc=2E312F\" width=\"100%\" height=\"600\"></iframe>', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -309,21 +366,18 @@ CREATE TABLE `storeaddresses` (
 --
 
 INSERT INTO `storeaddresses` (`id`, `store_id`, `city_id`, `storename`, `storeaddress`, `pincode`, `email`, `Direction`, `created_at`, `updated_at`, `url`) VALUES
-(1, 1, 2, 'SELECT CITY WALK\r\n\r\n\r\n', 'G – 55, Ground Floor, Select City Walk, New Delhi-110017\r\n', '    ', NULL, 'https://goo.gl/maps/tP1LVHUKNT7TPQ826', NULL, NULL, ''),
-(2, 1, 1, 'PALLADIUM MUMBAI\r\n\r\n', 'F-15A, 1st Floor, Palladium Mall, Lower Parel, Mumbai - 400013', '', NULL, 'https://goo.gl/maps/kjXthHPB386uCRASA', NULL, NULL, ''),
-(3, 1, 1, 'JIO WORLD DRIVE\r\n\r\n', 'F-32, 1st Floor, Jio World Drive Mall, Bandra Kurla Complex, Bandra East, Mumbai - 400051', '', NULL, 'https://goo.gl/maps/XS1GBzKmFbcrmuYdA', NULL, NULL, ''),
-(4, 2, 3, 'VR MALL NAGPUR\r\n\r\n', 'VR Mall unit no. K03 Upper Ground Floor Medical Square Nagpur: 440003', '', NULL, 'https://goo.gl/maps/jCezqyf6Wb9U9xkL8', NULL, NULL, ''),
-(5, 2, 4, 'WORLD TRADE PARK JAIPUR\r\n', 'World Trade Park, B-Block, 1st Floor, Near to Shoppers Stop, Jawahar Lal Nehru Marg, Jaipur – 302017.', '', NULL, 'https://g.page/APNAWTP?share', NULL, NULL, ''),
-(6, 2, 5, 'INORBIT MALL – VADODARA\r\n', 'Ground Floor Alembic Rd, Opposite to Alembic School, Gorwa, Vadodara, Gujarat-390023 ', '', NULL, 'https://g.page/inorbitvadodara?share', NULL, NULL, ''),
-(7, 3, 6, 'Beaute Luxe, Kolkata :', 'Domestic Airport\r\nJessore Rd, Dum Dum, Kolkata, West Bengal-700052', '', NULL, 'https://goo.gl/maps/wzZTCBUyP2HqKWUMA', NULL, NULL, ''),
-(8, 3, 7, 'Beaute Luxe, Kochi:', 'Shop No 8, Domestic Departure Terminal, \nCochin International Airport Limited, \nAluva, Ernakulam, Kerala - 683111', '', NULL, 'https://g.page/CochinInternationalAirport?share', NULL, NULL, ''),
-(9, 2, 8, 'Pune SGS Mall', 'Pune Ground floor Next to Sugar Kiosk, 23, Moledina Road,Camp, Pune Maharashtra 411001', '', NULL, 'https://goo.gl/maps/tv3LgFP9XD72s5Ud6', NULL, NULL, ''),
-(10, 2, 9, 'Kanpur Z Square Mall', 'Ground floor behind life style store, Civil Lines, Kanpur, uttar Pardesh 208001.', '', NULL, 'https://goo.gl/maps/iqhYuYQPJL4kRm3W6', NULL, NULL, ''),
-(11, 2, 10, 'Amritsar Mall of Amritsar', 'MBM Farms, G.T road, Rajinder Nagar, Amritsar, Maqbool Pura, Amritsar Punjab :143 001.', '', NULL, 'https://goo.gl/maps/wgeumGGi9ZUpramQ7', NULL, NULL, ''),
-(12, 3, 13, 'Beaute Luxe, Mumbai\r\n\r\n', 'Gr Floor, Inorbit Mall, New Link Rd, Malad West, \r\nMumbai, Maharashtra 400064', '', NULL, 'https://goo.gl/maps/szj9RNkifytzGZ9M8', NULL, NULL, ''),
-(13, 2, 14, 'Ambuja Mall, Raipur', 'Ambuja Mall Ground Floor Ambuja City Centre Vidhan Sabha Road Raipur 492007', NULL, NULL, 'https://g.page/AmbujaMall?share', NULL, NULL, ''),
-(14, 2, 15, 'MBD Neopolis Mall, Jalandhar', 'BS Jalandhar Opp Desh Dhagat Yaadgaar Halls BMC Chowk MBD Neopolis Civil Line Jalandhar 144001', NULL, NULL, 'https://goo.gl/maps/BL9Zu2Kq7VZgHv4E8', NULL, NULL, ''),
-(15, 2, 16, 'Nashik City Mall', 'Nashik City Mall Upper Ground Floor Sambhaji Chowk Law Gate Nagar Untwadi Nashik 422002 ', NULL, NULL, 'https://goo.gl/maps/Cx8suZnEx7gYxuCp7', NULL, NULL, '');
+(1, 1, 2, 'SELECT CITY WALK\r\n\r\n\r\n', 'G – 55, Ground Floor, Select City Walk, New Delhi-110017\r\n', '    ', NULL, 'https://www.google.com/maps/place/Maison+Des+Parfums/@28.528447,77.218974,17z/data=!3m1!4b1!4m5!3m4!', NULL, NULL, ''),
+(2, 1, 1, 'PALLADIUM MUMBAI\r\n\r\n', 'F-15A, 1st Floor, Palladium Mall, Lower Parel, Mumbai - 400013', '', NULL, 'https://www.google.com/maps/place/Maison+Des+Parfums/@18.9949051,72.8245914,17z/data=!3m1!4b1!4m5!3m', NULL, NULL, ''),
+(3, 1, 1, 'JIO WORLD DRIVE\r\n\r\n', 'F-32, 1st Floor, Jio World Drive Mall, Bandra Kurla Complex, Bandra East, Mumbai - 400051', '', NULL, 'https://www.google.com/maps/place/Maison+Des+Parfums+Jio+world+drive/@19.05313,72.8496273,17z/data=!', NULL, NULL, ''),
+(4, 2, 3, 'VR MALL NAGPUR\r\n\r\n', 'VR Mall unit no. K03 Upper Ground Floor Medical Square Nagpur: 440003', '', NULL, 'https://www.google.com/maps/place/VR+Mall/@21.1326898,79.0960455,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb', NULL, NULL, ''),
+(5, 2, 4, 'WORLD TRADE PARK JAIPUR\r\n', 'World Trade Park, B-Block, 1st Floor, Near to Shoppers Stop, Jawahar Lal Nehru Marg, Jaipur – 302017.', '', NULL, 'https://www.google.com/maps/place/World+Trade+Park/@26.853021,75.8046688,17z/data=!3m1!4b1!4m5!3m4!1', NULL, NULL, ''),
+(6, 2, 5, 'INORBIT MALL – VADODARA\r\n', 'Ground Floor Alembic Rd, Opposite to Alembic School, Gorwa, Vadodara, Gujarat-390023 ', '', NULL, 'https://www.google.com/maps/place/Inorbit+Mall+Vadodara/@22.3223271,73.1655842,17z/data=!3m1!4b1!4m5', NULL, NULL, ''),
+(7, 3, 6, 'Beaute Luxe, Kolkata :', 'Domestic Airport\r\nJessore Rd, Dum Dum, Kolkata, West Bengal-700052', '', NULL, 'https://www.google.com/maps/place/Netaji+Subhash+Chandra+Bose+International+Airport/@22.6531496,88.4', NULL, NULL, ''),
+(8, 3, 7, 'Beaute Luxe, Kochi:', 'Shop No 8, Domestic Departure Terminal, \nCochin International Airport Limited, \nAluva, Ernakulam, Kerala - 683111', '', NULL, 'https://www.google.com/maps/place/Cochin+International+Airport/@10.1517834,76.392958,17z/data=!3m1!4', NULL, NULL, ''),
+(9, 2, 8, 'Pune SGS Mall', 'Pune Ground floor Next to Sugar Kiosk, 23, Moledina Road,Camp, Pune Maharashtra 411001', '', NULL, 'https://www.google.com/maps/place/SGS+Mall,+231,+Moledina+Rd,+Camp,+Pune,+Maharashtra+411001/@18.519', NULL, NULL, ''),
+(10, 2, 9, 'Kanpur Z Square Mall', 'Ground floor behind life style store, Civil Lines, Kanpur, uttar Pardesh 208001.', '', NULL, 'https://www.google.com/maps/place/Z+Square+Mall/@26.4732721,80.352673,17z/data=!3m1!4b1!4m5!3m4!1s0x', NULL, NULL, ''),
+(11, 2, 10, 'Amritsar Mall of Amritsar', 'MBM Farms, G.T road, Rajinder Nagar, Amritsar, Maqbool Pura, Amritsar Punjab :143 001.', '', NULL, 'https://www.google.com/maps/place/Nexus+Amritsar/@31.6197701,74.9054437,17z/data=!3m2!4b1!5s0x39197c', NULL, NULL, ''),
+(12, 3, 13, 'Beaute Luxe, Mumbai\r\n\r\n', 'Gr Floor, Inorbit Mall, New Link Rd, Malad West, \r\nMumbai, Maharashtra 400064', '', NULL, 'https://www.google.com/maps/place/Inorbit+Mall(India)+Pvt.+Ltd,+Malad,+Mindspace,+Malad+West,+Mumbai', NULL, NULL, '');
 
 -- --------------------------------------------------------
 
@@ -404,7 +458,8 @@ CREATE TABLE `store_has_pictures` (
 --
 
 INSERT INTO `store_has_pictures` (`id`, `store_id`, `city_id`, `images`, `videos`, `created_at`, `updated_at`) VALUES
-(1, 8, 10, 'acbd', 'abc', '2022-10-06 05:37:41', '2022-10-06 05:37:41');
+(1, 1, 1, 'https://rukminim1.flixcart.com/image/200/200/l0fm07k0/plant-sapling/j/b/d/no-perennial-yes-thai-bari-1-malta-mosambi-sweet-lemon-grafted-original-imagc89hvysgfuft.jpeg?q=70', 'abc', '2022-10-06 05:37:41', '2022-10-06 05:37:41'),
+(2, 1, 1, 'https://rukminim1.flixcart.com/image/200/200/kumzpu80/water-purifier-bottle/9/x/1/temperature-display-500-ml-flask-pack-of-1-multicolor-steel-original-imag7q4aqmdgvpus.jpeg?q=70', 'abc', '2022-10-06 05:37:41', '2022-10-06 05:37:41');
 
 -- --------------------------------------------------------
 
@@ -483,6 +538,12 @@ CREATE TABLE `users` (
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `addresses_images`
+--
+ALTER TABLE `addresses_images`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `cities`
@@ -594,10 +655,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `addresses_images`
+--
+ALTER TABLE `addresses_images`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+
+--
 -- AUTO_INCREMENT for table `cities`
 --
 ALTER TABLE `cities`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -621,7 +688,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `maps`
 --
 ALTER TABLE `maps`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -639,7 +706,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `storeaddresses`
 --
 ALTER TABLE `storeaddresses`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `storecities`
@@ -663,7 +730,7 @@ ALTER TABLE `stores`
 -- AUTO_INCREMENT for table `store_has_pictures`
 --
 ALTER TABLE `store_has_pictures`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `subscribes`

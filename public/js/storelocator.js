@@ -63,7 +63,16 @@ const storeCity = () => {
             }
             const ifram = res.ifram[0].ifram
             $(".iframes").hide();
+            $('.showall2').html('');
+            var image='';
+            var url = window.location.origin;
             for (var i = 0; i < res.store.length; i++) {
+                if(res.store[i].image.length >0){
+                 for (var j = 0; j < res.store[i].image.length; j++) {
+                  image = image+'<div class="mySlides1"> <img src="'+url+'/New-bcplindia/public/'+res.store[i].image[j].image+'" id="imageResult" style="width:100%" height="600px" /> <div class="note"> </div> </div>';
+             
+                 }
+                }
                 var html =
                     '<p class="storehead">' +
                     res.store[i].storename +
@@ -76,6 +85,7 @@ const storeCity = () => {
 
 
                 $(".store").append(html);
+                $('.showall2').html(image);
                 $("#imageResult").attr("");
             }
             $(".iframe").append(ifram);

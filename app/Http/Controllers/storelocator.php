@@ -20,6 +20,11 @@ class storelocator extends Controller
     //  $images = DB::table('store_has_pictures')->where('city_id','=',$req->city)->get();
        $store= storeaddress::store($req->store)->city($req->city)->get();
        $ifram= map::IframStore($req->store)->IframCity($req->city)->get();
+     if(!empty($store)){
+        foreach ($store as $key => $value) {
+            $store[$key]->image =DB::table('addresses_images')->where('address_id',$value->id)->get();
+        }
+       } 
 
 
 

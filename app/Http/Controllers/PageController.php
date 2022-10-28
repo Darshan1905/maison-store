@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\{city,store};
+use App\Models\{city,store,Storeaddress};
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PageController extends Controller
 {
@@ -53,10 +54,11 @@ class PageController extends Controller
 
 
     public function Storelocator(Request $request) {
-
         $city=city::all();
-        $store=store::all();
-        return view('Storelocator',["storedata"=>$store,"storecity"=>$city]);
+
+        $store = store::all();
+        $storeaddres=Storeaddress::get();
+        return view('Storelocator',["storedata"=>$store,"storecity"=>$city,'storeaddres' => $storeaddres]);
     }
 
 

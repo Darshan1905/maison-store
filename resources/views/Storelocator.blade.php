@@ -255,157 +255,52 @@
                     <!--------- Your Store Data-------->
 
                     <div class="scroll-page store">
-                     
+                     @if($storeaddres)
+                     @foreach ($storeaddres as $key => $value) 
+                     <?php
+                     $images = array();
+                      $images = DB::table('addresses_images')->where('address_id',$value->id)->get();
+                      ?>
+                        <p class="mt-m"><b>{{ $value->storename }}</b></p>
 
-                        <p class="mt-m"><b>SELECT CITY WALK</b></p>
-
-                            <p>G – 55, Ground Floor, 
-                            Select City Walk, New Delhi - 110017</p>
-                            <a class="getdirectionbtn" href="https://goo.gl/maps/tP1LVHUKNT7TPQ826" target="_blank" >Get direction</a>
-                             <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
+                            <p>{{ $value->storeaddress }}</p>
+                            <a class="getdirectionbtn" href="{{ $value->Direction }}" target="_blank" >Get direction</a>
+                             <a data-bs-toggle="modal" data-bs-target="#examplal{{ $value->id }}"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
 
                              <hr>
+
+
+                              <div class="modal fade store-modal" id="examplal{{ $value->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen-sm-down">
+
+
+
+                                <div class="modal-content">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <div class="modal-body">
+                                      <div class="container">
+                                        <div class="slideshow-container">
+                                        @if(!empty($images)) 
+                                        @foreach ($images as $key => $img) 
+                                           
+                                          <div class="mySlides1">
+                                            <img style="width:100%"  src="{{ URL::to('/') }}/{{$img->image}}" id="imageResult" style="width:100%" height="600px" />
+                                            <div class="note">
+                                            </div>
+                                          </div>
+                                        @endforeach  
+                                        @endif
+                                        </div>
+                                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                                          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
                            
-                      
-
-                        <p class="mt-3"><b>PALLADIUM MUMBAI</b></p>
-
-                        <p>F-15A, 1st Floor, Palladium Mall, Lower Parel, Mumbai - 400013</p>
-
-                        <a class="getdirectionbtn" href="https://goo.gl/maps/kjXthHPB386uCRASA" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-                         <hr>
-
-
-
-                        <p class="mt-3"> <b>JIO WORLD DRIVE</b></p>
-
-                        <p>F-32, 1st Floor, Jio World Drive Mall, Bandra Kurla Complex, Bandra East, Mumbai - 400051</p>
-
-                        <a class="getdirectionbtn" href="https://goo.gl/maps/XS1GBzKmFbcrmuYdA" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-
-                        <p class="mt-3"><b>BEAUTE LUXE, KOLKATA:</b></p>
-
-                        <p>Domestic Airport ,Jessore Rd, Dum Dum, Kolkata, West Bengal - 700052</p>
-
-                        <a class="getdirectionbtn" href="https://goo.gl/maps/wzZTCBUyP2HqKWUMA" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-
-                        <p class="mt-3"><b>BEAUTE LUXE, MUMBAI</b></p>
-
-                        <p>Gr Floor, Inorbit Mall, New Link Rd, Malad West, Mumbai, Maharashtra 400064</p> 
-
-                        <a class="getdirectionbtn" href="https://goo.gl/maps/szj9RNkifytzGZ9M8" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-                        <p class="mt-3"><b>INORBIT MALL, VADODARA </b></p>
-
-                        <p>Ground Floor Alembic Rd, Opposite to Alembic School,
-                             Gorwa, Vadodara, Gujarat-390023 </p> 
-
-                        <a class="getdirectionbtn" href="https://g.page/inorbitvadodara?share" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-                   
-                        <p class="mt-3"><b>VR MALL NAGPUR</b></p>
-
-                        <p>VR Mall unit no. K03 Upper Ground Floor Medical Square Nagpur: 440003</p> 
-
-                        <a class="getdirectionbtn" href="https://goo.gl/maps/jCezqyf6Wb9U9xkL8" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-
-
-                        <p class="mt-3"><b>WORLD TRADE PARK, JAIPUR</b></p>
-
-                        <p>World Trade Park, B-Block, 1st Floor, Near to Shoppers Stop, Jawahar Lal Nehru Marg, Jaipur – 302017.</p> 
-
-                        <a class="getdirectionbtn" href="https://g.page/APNAWTP?share" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-                        <p class="mt-3"><b>Beaute Luxe, Kochi</b></p>
-
-                        <p>Shop No 8, Domestic Departure Terminal, 
-                            Cochin International Airport Limited, 
-                            Aluva, Ernakulam, Kerala - 683111</p> 
-
-                        <a class="getdirectionbtn" href="https://g.page/CochinInternationalAirport?share" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-
-                        <p class="mt-3"><b>Pune SGS Mall</b></p>
-
-                                <p>Pune Ground floor Next to Sugar Kiosk, 
-                                    23, Moledina Road,Camp, 
-                                    Pune Maharashtra 411001</p> 
-
-                        <a class="getdirectionbtn" href="https://goo.gl/maps/tv3LgFP9XD72s5Ud6" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-
-                        <p class="mt-3"><b>Kanpur Z Square Mall</b></p>
-
-                                <p>Ground floor behind life style store, 
-                                    Civil Lines, Kanpur, uttar Pardesh 208001.</p> 
-
-                        <a class="getdirectionbtn" href="https://goo.gl/maps/iqhYuYQPJL4kRm3W6" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
-
-                         <hr>
-
-                        <p class="mt-3"><b>Amritsar Mall of Amritsar</b></p>
-                        <p>MBM Farms, G.T road, 
-                            Rajinder Nagar, Amritsar, Maqbool Pura, 
-                            Amritsar Punjab :143 001.</p> 
-
-                        <a class="getdirectionbtn" href="https://goo.gl/maps/wgeumGGi9ZUpramQ7" target="_blank" >Get direction</a>
-                         <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link " href="javascript: void(0);" >Store Details</a>
-
-                       
-                         <hr>
-
-                         <p class="mt-3"><b>Ambuja Mall, Raipur</b></p>
-                         <p>Ambuja Mall Ground Floor Ambuja City Centre Vidhan...</p> 
- 
-                         <a class="getdirectionbtn" href="https://g.page/AmbujaMall?share" width="100" target="_blank" >Get direction</a>
-                          <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link " href="javascript: void(0);" >Store Details</a>
- 
-
-                          <hr>
-
-                          <p class="mt-3"><b>MBD Neopolis Mall, Jalandhar</b></p>
-                          <p>BS Jalandhar Opp Desh Dhagat Yaadgaar Halls BMC Ch...</p> 
-  
-                          <a class="getdirectionbtn" href="https://goo.gl/maps/BL9Zu2Kq7VZgHv4E8" width="100" target="_blank" >Get direction</a>
-                           <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link " href="javascript: void(0);" >Store Details</a>
- 
-                           
-                           <hr>
-
-                           <p class="mt-3"><b>Nashik City Mall</b></p>
-                           <p>Nashik City Mall Upper Ground Floor Sambhaji Chowk...</p> 
-   
-                           <a class="getdirectionbtn" href="https://goo.gl/maps/Cx8suZnEx7gYxuCp7" width="100" target="_blank" >Get direction</a>
-                            <a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-3 d-block store_details button_1 store-link " href="javascript: void(0);" >Store Details</a>
+                     @endforeach  
+                     @endif
    
                     </div>
                     
@@ -445,30 +340,8 @@
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body">
           <div class="container">
-            <div class="slideshow-container">
-              <div class="mySlides1">
-                <img src="/testimonial-1.png" id="imageResult" style="width:100%" height="600px" />
-                <div class="note">
-                </div>
-              </div>
-
-              <div class="mySlides1">
-                <img src="/Rectangle 4.png" style="width:100%" height="600px" />
-                <div class="note">
-                </div>
-              </div>
-
-              <div class="mySlides1">
-                <img src="/clientele-img.png" style="width:100%" height="600px" />
-                <div class="note">
-                </div>
-              </div>
-
-              <div class="mySlides1">
-                <img src="/Rectangle 4.png" style="width:100%" height="600px" />
-                <div class="note">
-                </div>
-              </div>
+            <div class="slideshow-container showall2">
+            
 
 
             </div>
