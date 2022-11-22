@@ -33,39 +33,44 @@
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        @media (min-width: 576px){
-           .store-modal .modal-dialog {
-              max-width: 1300px !important;
-              margin: 4.75rem auto !important;
+    @media (min-width: 576px) {
+        .store-modal .modal-dialog {
+            max-width: 1300px !important;
+            margin: 4.75rem auto !important;
             /* margin-right: 20px !important; */
-             }
         }
+    }
 
-        .get_directions{
-            padding: 6px 4%;
-            background: transparent;
-            color: black;
-            border: 2px solid black;
-            margin: unset;
-            font-size: unset;
-        }
-        .get_directions:hover{
-            background: black;
-            color: white;
-            transition: .5s;
-        }
-        .store_details{
-            color: black;
-        }
-        .store_details:hover{
-            color: black;
-        }
-        .four_img img{
-            width: 50%;
-            float: left;
-            padding: 3%;
-        }
-       .store-modal .modal-content {
+    .get_directions {
+        padding: 6px 4%;
+        background: transparent;
+        color: black;
+        border: 2px solid black;
+        margin: unset;
+        font-size: unset;
+    }
+
+    .get_directions:hover {
+        background: black;
+        color: white;
+        transition: .5s;
+    }
+
+    .store_details {
+        color: black;
+    }
+
+    .store_details:hover {
+        color: black;
+    }
+
+    .four_img img {
+        width: 50%;
+        float: left;
+        padding: 3%;
+    }
+
+    .store-modal .modal-content {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -76,114 +81,361 @@
         border: 0 !important;
         border-radius: none !important;
         outline: 0;
+    }
+
+    .store-modal .modal {
+        top: -40px !important;
+    }
+
+    .store-modal {
+        background: #00000060 !important;
+    }
+
+    .prev {
+        position: absolute;
+        left: 0;
+        top: 45%
+    }
+
+    .next {
+        position: absolute;
+        right: 0;
+        top: 45%
+    }
+
+    /* Header */
+
+    .logo-index-page-2 li a {
+        color: #fff;
+        list-style: none;
+        padding: 20px;
+    }
+
+    .logo-index-page-2 a {
+        /* color: #fff; */
+        text-decoration: none;
+    }
+
+    .header-top-nav-index-2 .logo-index-page-2 .current-tab a {
+
+        color: #aa8453 !important;
+        font-weight: bold;
+
+    }
+
+    .Store-index img {
+        padding: 5px;
+    }
+
+    .hamburger div {
+        width: 18px;
+        height: 3px;
+        margin-bottom: 2px;
+        background-color: #fff;
+    }
+
+    @media screen and (max-width: 767px) {
+        .header-top-nav-index {
+            flex-direction: column !important;
         }
 
-        .store-modal .modal{
-            top:-40px !important;
-        }   
-
-        .store-modal {
-            background:#00000060 !important;
+        .logo-index-page img {
+            width: 100%;
         }
 
-        .prev{
-                position: absolute;
-                left: 0;
-                 top: 45%
+        .banner h1 {
+            font-size: 20px;
         }
-        .next{
-                position: absolute;
-                right: 0;
-                 top: 45%
+    }
+
+    @media screen and (max-width:400px) {
+        .banner h1 {
+            font-size: 15px !important;
         }
-        
+    }
+
+
+    /* Footer Section  */
+
+    .main-footer-section {
+        max-width: 1350px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .foothead {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .footsection {
+        background-color: #070322;
+        color: #fff;
+    }
+
+    .footdata ul li {
+        list-style: none;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .footdata ul {
+        padding-left: 0px !important;
+    }
+
+    .footer-logo-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo-section img {
+        width: 50%;
+    }
+
+    .footer-logo-section p {
+        margin: 0 50px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .child-foot p {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .foot-email {
+        border-radius: 5px;
+        border: none;
+        padding: 5px 50px 5px 20px;
+        background: transparent !important;
+        border: 1px solid #fff;
+    }
+
+    .foot-email::placeholder {
+        font-size: 12px;
+    }
+
+    .child-foot {
+        display: flex !important;
+        /* justify-content: ; */
+    }
+
+
+
+    .f-email {
+        position: relative;
+    }
+
+    .f-email::before {
+        content: " ";
+        position: absolute;
+        top: 8px;
+        right: 0;
+        width: 20px;
+        height: 50px;
+        background: url("/Images/Path\ 76.png");
+        /* background: url("/picture/Icon\ ionic-ios-arrow-down.svg"); */
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1199px) {
+        .foot-email {
+            /* border-radius: 5px;
+    border: none; */
+            padding: 5px 18px 5px 20px;
+        }
+
+        .footer-logo-section p {
+            margin: 0 30px;
+            font-size: 16px;
+            /* text-align: center; */
+        }
+
+        .foothead {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .footdata ul li {
+            list-style: none;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .main-footer-section {
+            /* padding-right: 20px; */
+        }
+
+        .footdata .quick-links {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-footdata {
+            margin-top: 20px !important;
+            margin-left: 30px !important;
+        }
+
+        .child-foot {
+            justify-content: center !important;
+            text-align: center !important;
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+        .footsection {
+            text-align: center;
+        }
+
+        .footdata {
+            margin-top: 20px;
+        }
+
+        .main-footer-section {
+            padding-right: 0px;
+        }
+
+        .child-foot {
+            text-align: center;
+            /* display: block !important; */
+            /* float: right !important; */
+        }
+
+        .footer-logo-section img {
+            width: 45%;
+        }
+
+        .footer-logo-section p {
+            margin: 0 20px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .footer-footdata {
+            margin-top: 0px !important;
+            margin-left: 0px !important;
+        }
+    }
+
+    @media screen and (max-width:530px) {
+        .child-foot {
+            flex-direction: column !important;
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-list {
+        /* display: flex; */
+        justify-content: right;
+    }
+
+    .nav-item {
+        display: block;
+    }
+
+    ul {
+        background-color: var(--Dark-blue);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    @media (max-width: 767px) {
+        .hamburger {
+            cursor: pointer;
+            display: block;
+            padding-left: 1rem;
+        }
+
+        .nav-item {
+            display: none;
+        }
+
+        .nav-item.show {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-index-page-2 {
+            background-color: #070322;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left !important;
+            z-index: 1;
+            text-align: left !important;
+            position: absolute;
+            top: 10.8%;
+            left: 0%;
+        }
+    }
     </style>
 </head>
 
 <body>
 
-    <div class="container-fluid bg-white text-black headercontainer">
-        <div class="firstnav mt-3 pe-5 text-center">
-            <nav class="allnav">
-                <ul class="nav-links">
-                    <li><a href="{{ route('about') }}" class="leftmenu">ABOUT US</a></li>
-                    <li><a href="{{ route('Brands') }}" class="leftmenu">BRANDS</a></li>
-                    <li>
-                        <a href="{{ route('Maisondeperfums') }}" class="leftmenu">MAISON DES PARFUMS</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('Index') }}" class="centermenu"><img src="pictures/logoblack.png"
-                                alt="" /></a>
-                    </li>
-                    <li><a href="{{ route('Ourstores') }}" class="rightmenu">OUR STORES</a></li>
-                    <li>
-                        <a href="{{ route('createForm') }}" class="rightmenu">CONTACT US</a>
-                    </li>
-                    <li>
-                        <a href="{{ route('Storelocator') }}" class="rightmenu active">STORE LOCATOR</a>
-                    </li>
-                </ul>
-                <div class="float-end language-class">
-                                    <!-- Button trigger modal -->
 
-    <img src="/pictures/internet-black.png" alt="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width:25px" >
-
-<!-- Modal -->
-<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <div class="modal-body">
-      <div class="google-class" id="google_element"></div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-</div>
-            </nav>
-        </div>
-        <div class="secondnav">
-            <nav class="navbar navbar-expand-xm navbar-light p-md-3">
-                <div class="container">
-                    <a class="navbar-brand" class="centermenu" href="{{ route('Index') }}"><img
-                            src="pictures/logoblack.png" width="40%" alt="" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <div class="mx-auto"></div>
-                        <ul class="navbar-nav d-flex flex-column text-start mt-3">
-                            <li class="nav-item">
-                                <a class="nav-link text-black" href="{{ route('about') }}">ABOUT US</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-black" href="{{ route('Brands') }}">BRANDS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-black" href="{{route('Maisondeperfums')}}">MAISON DES PARFUMS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-black" href="{{ route('Ourstores') }}">OUR STORES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-black" href="{{ route('createForm') }}">CONTACT US</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-black" href="{{ route('Storelocator') }}">STORE LOCATOR</a>
-                            </li>
-                        </ul>
+    <section class="" style="background-color: #070322; border-bottom: 2px solid #aa8453">
+        <div class="header-top-nav-index d-flex align-items-center justify-content-between ps-3 pe-3">
+            <div class="social-index pt-3 pb-3 d-flex justify-content-between">
+                <img class="pe-2" src="/Images/whatsapp.png" alt="" style="width: 100%" />
+                <img class="pe-2" src="/Images/linkedin.png" alt="" style="width: 100%" />
+                <img src="/Images/facebook.png" alt="" style="width: 100%" />
+            </div>
+            <div class="logo-index-page pt-3 pb-3">
+                <a href="http://43.204.32.147/"> <img src="/Images/Beauty-Luxe.png" alt="" /></a>
+            </div>
+            <div class="Store-index pt-3 pb-3 d-flex align-items-center">
+                <a href="http://43.204.32.147/stores">
+                    <div class="d-flex align-items-center">
+                        <img src="/Images/Icon material-add-location.svg" alt="" width="20px" class="mb-2" />
+                        <h6 class="ps-2" style="color: #fff">Stores</h6>
                     </div>
-                </div>
-            </nav>
+                </a>
+                <div class="ps-5" id="google_element"></div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <img src="pictures/store-locator-01.png" width="100%" alt="" />
+    <section class="" style="background-color: #070322">
+        <div class="header-top-nav-index-2 d-flex align-items-center justify-content-between ps-3 pe-3">
+            <div id="hamburger" class="hamburger" onclick="myFunction()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="social-index pt-3 pb-3 d-flex justify-content-between"></div>
+
+            <div class="logo-index-page-2 d-flex d-row  nav-list" id="nav-list">
+                <li class="nav-item current-tab"><a href="brands.html"> Brands</a></li>
+                <li class="nav-item"><a href="fragrance.html"> Fragrance</a></li>
+                <li class="nav-item"><a href="skincare.html"> Skincare</a></li>
+                <li class="nav-item"><a href="haircare.html"> Haircare</a></li>
+                <li class="nav-item"><a href="makeup.html"> Makeup</a></li>
+                <li class="nav-item"><a href="sales.html"> Sales</a></li>
+                <!-- <img src="/Images/Beauty-Luxe.png" alt="" > -->
+            </div>
+
+            <div class="Store-index pt-3 pb-3 d-flex align-items-center">
+                <img src="/Images/Icon awesome-search.svg" alt="" style="width: 30px" />
+                <img src="/Images/Icon awesome-heart.svg" alt="" style="width: 30px" />
+                <img src="/Images/Icon awesome-shopping-cart.svg" alt="" style="width: 30px" />
+                <img src="/Images/Icon material-supervisor-account.svg" alt="" style="width: 25px" />
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <img src="pictures/store-locator-01.png" width="100%" alt="" /> -->
 
 
     <div class="container mt-5 mb-5">
@@ -230,7 +482,7 @@
                             </select>
                         </label>
                     </div>
-                    
+
                     <div class="st">
                         <label class="storelabel-2">
                             <select onchange="storeCity()" id="storeCity" class="form-select form-store appendcity"
@@ -255,55 +507,60 @@
                     <!--------- Your Store Data-------->
 
                     <div class="scroll-page store">
-                     @if($storeaddres)
-                     @foreach ($storeaddres as $key => $value) 
-                     <?php
+                        @if($storeaddres)
+                        @foreach ($storeaddres as $key => $value)
+                        <?php
                      $images = array();
                       $images = DB::table('addresses_images')->where('address_id',$value->id)->get();
                       ?>
                         <p class="mt-m"><b>{{ $value->storename }}</b></p>
 
-                            <p>{{ $value->storeaddress }}</p>
-                            <a class="getdirectionbtn" href="{{ $value->Direction }}" target="_blank" >Get direction</a>
-                             <a data-bs-toggle="modal" data-bs-target="#examplal{{ $value->id }}"  id="button_1" class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);" >Store Details</a>
+                        <p>{{ $value->storeaddress }}</p>
+                        <a class="getdirectionbtn" href="{{ $value->Direction }}" target="_blank">Get direction</a>
+                        <a data-bs-toggle="modal" data-bs-target="#examplal{{ $value->id }}" id="button_1"
+                            class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);">Store
+                            Details</a>
 
-                             <hr>
+                        <hr>
 
 
-                              <div class="modal fade store-modal" id="examplal{{ $value->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-fullscreen-sm-down">
+                        <div class="modal fade store-modal" id="examplal{{ $value->id }}" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen-sm-down">
 
 
 
                                 <div class="modal-content">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                     <div class="modal-body">
-                                      <div class="container">
-                                        <div class="slideshow-container">
-                                        @if(!empty($images)) 
-                                        @foreach ($images as $key => $img) 
-                                           
-                                          <div class="mySlides1">
-                                            <img style="width:100%"  src="{{ URL::to('/') }}/{{$img->image}}" id="imageResult" style="width:100%" height="600px" />
-                                            <div class="note">
+                                        <div class="container">
+                                            <div class="slideshow-container">
+                                                @if(!empty($images))
+                                                @foreach ($images as $key => $img)
+
+                                                <div class="mySlides1">
+                                                    <img style="width:100%" src="{{ URL::to('/') }}/{{$img->image}}"
+                                                        id="imageResult" style="width:100%" height="600px" />
+                                                    <div class="note">
+                                                    </div>
+                                                </div>
+                                                @endforeach
+                                                @endif
                                             </div>
-                                          </div>
-                                        @endforeach  
-                                        @endif
+                                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                                         </div>
-                                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                                          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                                      </div>
                                     </div>
-                                  </div>
                                 </div>
-                                </div>
-                           
-                     @endforeach  
-                     @endif
-   
+                            </div>
+                        </div>
+
+                        @endforeach
+                        @endif
+
                     </div>
-                    
+
 
                     <!--------- Your Store Data-------->
                 </div>
@@ -312,7 +569,7 @@
             <!-------------map ifram--------------->
             <div class="col-lg-6">
                 <div class="iframes">
-                     <iframe
+                    <iframe
                         src="https://www.google.com/maps/d/embed?mid=1MuChuinf5MEmMcCwBcM3bZjpuILEPyc&hl=en&ehbc=2E312F"
                         width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -326,35 +583,133 @@
             <!-------------map ifram--------------->
         </div>
     </div>
+
+
     <!-- footer -->
 
-    <x-footer />
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5"></div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid footsection">
+        <div class="main-footer-section">
+            <div class="row pt-5 pb-4">
+                <div class="col-lg-5 col-md-12">
+                    <div class="footer-logo-section">
+                        <img src="/Images/Beauty-Luxe-foot.png" alt="" width="100%" />
+                        <p class="mt-5">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                            aliquyam erat <br /><br />
+                            sed diam voluptua. At vero eos et accusam et justo duo dolores
+                            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                            est Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12s">
+                    <div class="row footer-footdata">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="footdata">
+                                <ul>
+                                    <li>
+                                        <div class="foothead mb-3">BEAUT LUXE</div>
+                                    </li>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Who we are ? </a> </li>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Terms & Conditions </a>
+                                    </li>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> We respect your privacy
+                                        </a> </li>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Contact Us </a> </li>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Shipping & Returns </a>
+                                    </li>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Authentication
+                                            Certificate </a> </li>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> FAQs </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="footdata">
+                                <ul>
+                                    <li>
+                                        <div class="foothead mb-3">SHOP BY</div>
+                                    </li>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Fragrance For Him</li>
+                                    </a>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Fragrance For Her</li>
+                                    </a>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Makeup</li></a>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Body Care</li></a>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Home Fragrance</li></a>
+                                    <li> <a href="#" style="color:#fff; text-decoration:none;"> Luggage</li></a>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="footdata">
+                                <ul class="quick-links">
+                                    <li>
+                                        <div class="foothead mb-3">QUICK LINKS:</div>
+                                    </li>
+                                    <a href="#"> <img src="/Images/whatsapp.png" alt="" /></a>&nbsp;&nbsp;&nbsp;
+                                    <a href="#"> <img src="/Images/linkedin.png" alt="" /></a>&nbsp;&nbsp;
+                                    <a href="#"> <img src="Images/facebook.png" alt="" /></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="child-foot align-items-center">
+                        <p class="mt-3 pe-2">Sign up for our Newsletter</p>
+                        <div class="foot-email-block">
+                            <label class="f-email">
+                                <input type="email" class="foot-email" placeholder="Your email address" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
     <!-- Button trigger modal -->
     <!-- Modal -->
-    <div class="modal fade store-modal" id="examplal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade store-modal" id="examplal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-fullscreen-sm-down">
 
 
 
-    <div class="modal-content">
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="modal-body">
-          <div class="container">
-            <div class="slideshow-container showall2">
-            
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="slideshow-container showall2">
 
 
+
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    </div>
+                </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-          </div>
         </div>
-      </div>
-    </div>
     </div>
 
     <script type="text/javascript" src="{{url('js/storelocator.js')}}"></script>
-    <script> <link rel="stylesheet" href="style.css"></script>
+    <script>
+    < link rel = "stylesheet"
+    href = "style.css" >
+    </script>
     <script src="main.js"></script>
 
     <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
@@ -362,27 +717,25 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 
-<script>
-  function loadGoogleTranslate() {
-    new google.translate.TranslateElement("google_element");
-  }
-</script>
+    <script>
+    function loadGoogleTranslate() {
+        new google.translate.TranslateElement("google_element");
+    }
+    </script>
 
-<script>
+    <script>
+    $(".button_1").click(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "/pages/test/",
+            data: {
+                id: $(this).val(), // < note use of 'this' here
+                access_token: $("#access_token").val()
+            },
 
-$(".button_1").click(function(e) {
-    e.preventDefault();
-    $.ajax({
-        type: "POST",
-        url: "/pages/test/",
-        data: {
-            id: $(this).val(), // < note use of 'this' here
-            access_token: $("#access_token").val()
-        },
-
+        });
     });
-});
-
     </script>
 
 </body>
