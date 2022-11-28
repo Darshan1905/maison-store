@@ -44,7 +44,7 @@
         <div class="header-main d-flex  justify-content-between align-items-center ps-3 pe-3 p-2">
             <div class="header-content  ">
                 <h6 class=""> <a href="#" class="text-decoration-none text-white d-flex align-items-center"> <img
-                            src="/images/Path 306.svg" alt="" style="width: 10px;"> &nbsp;Stores </a></h6>
+                            src="/Images/Path 306.svg" alt="" style="width: 10px;"> &nbsp;Stores </a></h6>
             </div>
             <div>
                 <span class="text-white">
@@ -52,9 +52,9 @@
                 </span>
             </div>
             <div class="header-content d-flex justify-content-between align-items-center ">
-                <a href="#"> <img src="/images/fb-white.png" alt="" style="width: 50%;" /></a>
-                <a href="#"> <img src="/images/wh-white.png" alt="" style="width: 50%;" /></a>
-                <a href="#"> <img src="/images/insta-white.png" alt="" style="width: 50%;" /></a>
+                <a href="#"> <img src="/Images/fb-white.png" alt="" style="width: 50%;" /></a>
+                <a href="#"> <img src="/Images/wh-white.png" alt="" style="width: 50%;" /></a>
+                <a href="#"> <img src="/Images/insta-white.png" alt="" style="width: 50%;" /></a>
 
             </div>
         </div>
@@ -70,12 +70,12 @@
 
 
             <div class="d-none d-md-block">
-                <a href="#"> <img src="/images/Path 314.svg" alt="" style="width:22px"></a>
+                <a href="#"> <img src="/Images/Path 314.svg" alt="" style="width:22px"></a>
                 </a>
             </div>
 
             <div class="logo-index-page d-block d-md-none ">
-                <img src="/images/header-logo.png" alt="" width="80">
+                <img src="/Images/header-logo.png" alt="" width="80">
             </div>
 
 
@@ -90,7 +90,7 @@
                     <li>Bath Body & Hygiene</li>
                 </a>
                 <a href="http://13.233.85.187/" class="nav-item">
-                    <li class="logo"><img src="/images/header-logo.png" alt="" width="80"></li>
+                    <li class="logo"><img src="/Images/header-logo.png" alt="" width="80"></li>
                 </a>
                 <a href="http://13.233.85.187/tools-accessories.html" class="nav-item">
                     <li>Tools & Accessories</li>
@@ -108,11 +108,11 @@
             <div class="Store-index   d-flex align-items-center">
 
                 <div class="d-block d-md-none">
-                    <a href="#"> <img src="/images/Path 314.svg" alt="" style="width: 22px;"></a>
+                    <a href="#"> <img src="/Images/Path 314.svg" alt="" style="width: 22px;"></a>
                     </a>
                 </div>
                 <div class="ps-3 d-none d-md-block">
-                    <a href="#"><img src="/images/Group 287.svg" alt="" style="width: 22px;"></a>
+                    <a href="#"><img src="/Images/Group 287.svg" alt="" style="width: 22px;"></a>
                     </a>
                 </div>
 
@@ -121,7 +121,7 @@
                     </a>
                 </div>
                 <div class="ps-3 ">
-                    <a href="cart.html"><img src="/images/Group 344.svg" alt="" style="width: 20px;"></a>
+                    <a href="cart.html"><img src="/Images/Group 344.svg" alt="" style="width: 20px;"></a>
                     </a>
                 </div>
 
@@ -359,11 +359,11 @@
                                             </label>
                                         </div>
                                         <div class="d-flex justify-content-start mt-2 align-items-center ">
-                                            <a href="#"> <img src="/images/fb-black.png" alt=""
+                                            <a href="#"> <img src="/Images/fb-black.png" alt=""
                                                     style="width: 50%;" /></a>&nbsp;&nbsp;
-                                            <a href="#"> <img src="/images/wh-black.png" alt=""
+                                            <a href="#"> <img src="/Images/wh-black.png" alt=""
                                                     style="width: 50%;" /></a>&nbsp;&nbsp;
-                                            <a href="#"> <img src="/images/insta-black.png" alt=""
+                                            <a href="#"> <img src="/Images/insta-black.png" alt=""
                                                     style="width: 50%;" /></a>
 
                                         </div>
@@ -480,9 +480,9 @@
                                             </label>
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center mt-2 ">
-                <a href="#"> <img src="/images/fb-black.png" alt="" style="width: 50%;" /></a>&nbsp;&nbsp;
-                <a href="#"> <img src="/images/wh-black.png" alt="" style="width: 50%;" /></a>&nbsp;&nbsp;
-                <a href="#"> <img src="/images/insta-black.png" alt="" style="width: 50%;" /></a>
+                <a href="#"> <img src="/Images/fb-black.png" alt="" style="width: 50%;" /></a>&nbsp;&nbsp;
+                <a href="#"> <img src="/Images/wh-black.png" alt="" style="width: 50%;" /></a>&nbsp;&nbsp;
+                <a href="#"> <img src="/Images/insta-black.png" alt="" style="width: 50%;" /></a>
 
             </div>
                                         <p class="mt-3 pe-2">© 2022 Beaute Luxe. All Right Reserved.</p>
