@@ -93,13 +93,14 @@ const storeCity = () => {
                     '<p class="storehead">' +
                     res.store[i].storename +
                     '</p><p class="storedata">' +
-                    res.store[i].storeaddress +
+                   res.store[i].storeaddress +
                     "</p>" +
                     '<p class="mt-3"><a class="getdirectionbtn" href="' +
                     res.store[i].Direction +
-                    '" target="_blank" >Get direction</a></p>' +
-                    '<a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-1 d-block store_details button_1 store-link" href="javascript: void(0);">Store Details</a>' +
-                    "<hr>";
+                    // '" target="_blank" >Get direction</a></p>' +
+                    // '<a data-bs-toggle="modal" data-bs-target="#examplal"  id="button_1" class="pt-1 d-block store_details button_1 store-link" href="javascript: void(0);">Store Details</a>' +
+                    // "<hr>"
+                    // ;
 
                 $(".store").append(html);
                 $(".showall2").html(image);

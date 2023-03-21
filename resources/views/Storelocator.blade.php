@@ -190,12 +190,14 @@
                         <p class="mt-m"><b>{{ $value->storename }}</b></p>
 
                         <p>{{ $value->storeaddress }}</p>
-                        <a class="getdirectionbtn" href="{{ $value->Direction }}" target="_blank">Get direction</a>
+{{--                         
+                        <a class="getdirectionbtn" href="{{ $value->Direction }}" target="_blank">Get direction</a> 
+
                         <a data-bs-toggle="modal" data-bs-target="#examplal{{ $value->id }}" id="button_1"
                             class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);">Store
                             Details</a>
 
-                        <hr>
+                        <hr>--}}
 
 
                         <div class="modal fade store-modal" id="examplal{{ $value->id }}" tabindex="-1"
