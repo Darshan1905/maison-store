@@ -41,6 +41,7 @@
     <!-- Header -->
 
     <section class="d-none d-md-block" style="background-color: #412B23;">
+        <div class="container">
         <div class="header-main d-flex  justify-content-between align-items-center ps-3 pe-3 p-2">
             <div class="header-content  ">
                 <h6 class=""> <a href="#" class="text-decoration-none text-white d-flex align-items-center"> <img
@@ -48,16 +49,17 @@
             </div>
             <div>
                 <span class="text-white">
-                    Free Shipping On Purchase Of Rs. 1800 And Above
+                    Free Shipping On Purchase Of Rs. 1500 And Above
                 </span>
             </div>
             <div class="header-content d-flex justify-content-between align-items-center ">
-                <a href="#"> <img src="/Images/fb-white.png" alt="" style="width: 50%;" /></a>
-                <a href="#"> <img src="/Images/wh-white.png" alt="" style="width: 50%;" /></a>
-                <a href="#"> <img src="/Images/insta-white.png" alt="" style="width: 50%;" /></a>
+                <a href="#"> <img src="/Images/fb-white.png" alt="" style="width: 60%;" /></a>
+                <a href="#"> <img src="/Images/wh-white.png" alt="" style="width: 60%;" /></a>
+                <a href="#"> <img src="/Images/insta-white.png" alt="" style="width: 60%;" /></a>
 
             </div>
         </div>
+    </div>
     </section>
 
     <section class="pt-3 pb-3 main-header-section-mdb">
@@ -69,9 +71,9 @@
             </div>
 
 
-            <div class="d-none d-md-block">
-                <a href="#"> <img src="/Images/Path 314.svg" alt="" style="width:22px"></a>
-                </a>
+            <div class="d-block">
+                {{-- <a href="#"> <img src="/Images/Path 314.svg" alt="" style="width:22px"></a>
+                </a> --}}
             </div>
 
             <div class="logo-index-page d-block d-md-none ">
@@ -80,22 +82,22 @@
 
 
             <div class="header-menu d-none d-md-flex d-flex justify-content-center align-items-end nav-list">
-                <a href="http://13.233.85.187/haircare.html" class="nav-item">
+                <a href="https://mdb-india.com/haircare.html" class="nav-item">
                     <li>Haircare</li>
                 </a>
-                <a href="http://13.233.85.187/skincare.html" class="nav-item">
+                <a href="https://mdb-india.com/skincare.html" class="nav-item">
                     <li>Face Care</li>
                 </a>
-                <a href="http://13.233.85.187/bath-body-hygine.html" class="nav-item">
+                <a href="https://mdb-india.com/bath-body-hygine.html" class="nav-item">
                     <li>Bath Body & Hygiene</li>
                 </a>
-                <a href="http://13.233.85.187/" class="nav-item">
+                <a href="https://mdb-india.com/" class="nav-item">
                     <li class="logo"><img src="/Images/header-logo.png" alt="" width="80"></li>
                 </a>
-                <a href="http://13.233.85.187/tools-accessories.html" class="nav-item">
+                <a href="https://mdb-india.com/tools-accessories.html" class="nav-item">
                     <li>Tools & Accessories</li>
                 </a>
-                <a href="http://13.233.85.187/spa-at-home.html" class="nav-item">
+                <a href="https://mdb-india.com/spa-at-home.html" class="nav-item">
                     <li>Spa At Home</li>
                 </a>
 
@@ -107,22 +109,22 @@
 
             <div class="Store-index   d-flex align-items-center">
 
-                <div class="d-block d-md-none">
-                    <a href="#"> <img src="/Images/Path 314.svg" alt="" style="width: 22px;"></a>
-                    </a>
+                <div class="d-block ">
+                    {{-- <a href="#"> <img src="/Images/Path 314.svg" alt="" style="width: 22px;"></a>
+                    </a> --}}
                 </div>
-                <div class="ps-3 d-none d-md-block">
-                    <a href="#"><img src="/Images/Group 287.svg" alt="" style="width: 22px;"></a>
-                    </a>
+                <div class="ps-3  d-block">
+                    {{-- <a href="#"><img src="/Images/Group 287.svg" alt="" style="width: 22px;"></a>
+                    </a> --}}
                 </div>
 
-                <div class="ps-3 d-none d-md-block">
-                    <a href="login.html"><img src="/Images/headuser-black.png" alt="" style="width: 22px;"></a>
-                    </a>
+                <div class="ps-3 d-block">
+                    {{-- <a href="login.html"><img src="/Images/headuser-black.png" alt="" style="width: 22px;"></a>
+                    </a> --}}
                 </div>
-                <div class="ps-3 ">
-                    <a href="cart.html"><img src="/Images/Group 344.svg" alt="" style="width: 20px;"></a>
-                    </a>
+                <div class="ps-3 d-block">
+                    {{-- <a href="cart.html"><img src="/Images/Group 344.svg" alt="" style="width: 20px;"></a>
+                    </a> --}}
                 </div>
 
             </div>
@@ -137,7 +139,7 @@
     <div class="container mt-5 mb-5">
         <div class="row">
 
-            <div class="col-md-6 storecard">
+            <div class=" col-lg -6 col-md-12 col-sm-12 my-5 storecard">
                 <div class="wrapper mt-3 mb-5">
                     <div class="st">
                         <label class="storelabel">
@@ -190,8 +192,8 @@
                         <p class="mt-m"><b>{{ $value->storename }}</b></p>
 
                         <p>{{ $value->storeaddress }}</p>
-{{--                         
-                        <a class="getdirectionbtn" href="{{ $value->Direction }}" target="_blank">Get direction</a> 
+{{--
+                        <a class="getdirectionbtn" href="{{ $value->Direction }}" target="_blank">Get direction</a>
 
                         <a data-bs-toggle="modal" data-bs-target="#examplal{{ $value->id }}" id="button_1"
                             class="pt-3 d-block store_details button_1 store-link" href="javascript: void(0);">Store
@@ -200,7 +202,7 @@
                         <hr>--}}
 
 
-                        <div class="modal fade store-modal" id="examplal{{ $value->id }}" tabindex="-1"
+                        {{-- <div class="modal fade store-modal" id="examplal{{ $value->id }}" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen-sm-down">
 
@@ -230,7 +232,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         @endforeach
                         @endif
@@ -243,7 +245,7 @@
             </div>
 
             <!-------------map ifram--------------->
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-12 my-5">
                 <div class="iframes">
                     <iframe
                         src="https://www.google.com/maps/d/embed?mid=1MuChuinf5MEmMcCwBcM3bZjpuILEPyc&hl=en&ehbc=2E312F"
@@ -279,10 +281,8 @@
                 <div class="col-lg-4 col-md-12 pt-3">
                     <div class="footer-logo-section">
                         <img src="/Images/Maison.png" alt="" />
-                        <p class="mt-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum facilisis sem id
-                            ultrices. Proin hendrerit tellus erat, in aliquet lectus aliquet sit amet. Phasellus vel
-                            sagittis arcu. In hac habitasse platea dictumst.
+                        <p class="mt-2">
+                            Maison De Beaute has redefined the conventional shopping experience with a brand portfolio that represents the pinnacle of craftsmanship and unsurpassed quality further reinforcing its position as India's most desirable destination for world-class brands.
                         </p>
                     </div>
                 </div>
@@ -294,23 +294,23 @@
                                     <li>
                                         <div class="foothead mb-3">MAISON DE BEAUTE</div>
                                     </li>
-                                    <li class="mt-3"> <a href="#" style="color:#000; text-decoration:none;"> Who we are
+                                    <li class="mt-1"> <a href="#" style="color:#000; text-decoration:none;"> Who we are
                                             ? </a> </li>
-                                    <li class="mt-3"> <a href="#" style="color:#000; text-decoration:none;"> Terms &
+                                    <li class="mt-1"> <a href="#" style="color:#000; text-decoration:none;"> Terms &
                                             Conditions </a>
                                     </li>
-                                    <li class="mt-3"> <a href="#" style="color:#000; text-decoration:none;"> We respect
+                                    <li class="mt-1"> <a href="#" style="color:#000; text-decoration:none;"> We respect
                                             your privacy
                                         </a> </li>
-                                    <li class="mt-3"> <a href="#" style="color:#000; text-decoration:none;"> Contact Us
+                                    <li class="mt-1"> <a href="#" style="color:#000; text-decoration:none;"> Contact Us
                                         </a> </li>
-                                    <li class="mt-3"> <a href="#" style="color:#000; text-decoration:none;"> Shipping &
+                                    <li class="mt-1"> <a href="#" style="color:#000; text-decoration:none;"> Shipping &
                                             Returns </a>
                                     </li>
-                                    <li class="mt-3"> <a href="#" style="color:#000; text-decoration:none;">
+                                    <li class="mt-1"> <a href="#" style="color:#000; text-decoration:none;">
                                             Authentication
                                             Certificate </a> </li>
-                                    <li class="mt-3"> <a href="#" style="color:#000; text-decoration:none;"> FAQs </a>
+                                    <li class="mt-1"> <a href="#" style="color:#000; text-decoration:none;"> FAQs </a>
                                     </li>
                                 </ul>
                             </div>
@@ -321,25 +321,25 @@
                                     <li>
                                         <div class="foothead mb-3">SHOP BY</div>
                                     </li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/skincare.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/skincare.html"
                                             style="color:#000; text-decoration:none;"> Skin Care
                                         </a>
                                     </li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/haircare.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/haircare.html"
                                             style="color:#000; text-decoration:none;"> Hair Care
 
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/bath-body-hygine.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/bath-body-hygine.html"
                                             style="color:#000; text-decoration:none;"> Bath Body & Hygiene
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/tools-accessories.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/tools-accessories.html"
                                             style="color:#000; text-decoration:none;"> Tools & Accessories
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/spa-at-home.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/spa-at-home.html"
                                             style="color:#000; text-decoration:none;"> Spa at Home
 
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/new-launches.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/new-launches.html"
                                             style="color:#000; text-decoration:none;"> New Launches
 
                                         </a></li>
@@ -369,7 +369,7 @@
                                                     style="width: 50%;" /></a>
 
                                         </div>
-                                        <p class="mt-3 pe-2">© 2022 Beaute Luxe. All Right Reserved.</p>
+                                        <p class="mt-1 pe-2">© 2022 Beaute Luxe. All Right Reserved.</p>
 
                                     </div>
                                 </ul>
@@ -393,24 +393,24 @@
                                     <code class="text-start">
                                     <div class="footdata">
                                 <ul>
-                                   
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Who we are
+
+                                    <li class="mt-1"> <a href="#" style=" text-decoration:none;"> Who we are
                                             ? </a> </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Terms &
+                                    <li class="mt-1"> <a href="#" style=" text-decoration:none;"> Terms &
                                             Conditions </a>
                                     </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> We respect
+                                    <li class="mt-1"> <a href="#" style=" text-decoration:none;"> We respect
                                             your privacy
                                         </a> </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Contact Us
+                                    <li class="mt-1"> <a href="#" style=" text-decoration:none;"> Contact Us
                                         </a> </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> Shipping &
+                                    <li class="mt-1"> <a href="#" style=" text-decoration:none;"> Shipping &
                                             Returns </a>
                                     </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;">
+                                    <li class="mt-1"> <a href="#" style=" text-decoration:none;">
                                             Authentication
                                             Certificate </a> </li>
-                                    <li class="mt-3"> <a href="#" style=" text-decoration:none;"> FAQs </a>
+                                    <li class="mt-1"> <a href="#" style=" text-decoration:none;"> FAQs </a>
                                     </li>
                                 </ul>
                             </div>
@@ -431,25 +431,25 @@
                                     <code class="text-start">
                                     <div class="footdata">
                                 <ul>
-                                <li class="mt-3"> <a href="http://13.233.85.187/skincare.html"
+                                <li class="mt-1"> <a href="https://mdb-india.com/skincare.html"
                                             style=" text-decoration:none;"> Skin Care
                                         </a>
                                     </li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/haircare.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/haircare.html"
                                             style=" text-decoration:none;"> Hair Care
 
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/bath-body-hygine.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/bath-body-hygine.html"
                                             style=" text-decoration:none;"> Bath Body & Hygiene
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/tools-accessories.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/tools-accessories.html"
                                             style=" text-decoration:none;"> Tools & Accessories
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/spa-at-home.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/spa-at-home.html"
                                             style=" text-decoration:none;"> Spa at Home
 
                                         </a></li>
-                                    <li class="mt-3"> <a href="http://13.233.85.187/new-launches.html"
+                                    <li class="mt-1"> <a href="https://mdb-india.com/new-launches.html"
                                             style=" text-decoration:none;"> New Launches
 
                                         </a></li>
@@ -474,7 +474,7 @@
                                         <div class="footdata">
                                 <ul class="quick-links">
                                     <div class="child-foot align-items-center">
-                                  
+
                                         <div class="foot-email-block">
                                             <label class="f-email">
                                                 <input type="email" class="foot-email text-white"
@@ -482,12 +482,13 @@
                                             </label>
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center mt-2 ">
-                <a href="#"> <img src="/Images/fb-black.png" alt="" style="width: 50%;" /></a>&nbsp;&nbsp;
-                <a href="#"> <img src="/Images/wh-black.png" alt="" style="width: 50%;" /></a>&nbsp;&nbsp;
-                <a href="#"> <img src="/Images/insta-black.png" alt="" style="width: 50%;" /></a>
+
+                    <a href="#"> <img src="/Images/fb-black.png" alt="" style="width: 50%;" /></a>&nbsp;&nbsp;
+                    <a href="#"> <img src="/Images/wh-black.png" alt="" style="width: 50%;" /></a>&nbsp;&nbsp;
+                    <a href="#"> <img src="/Images/insta-black.png" alt="" style="width: 50%;" /></a>
 
             </div>
-                                        <p class="mt-3 pe-2">© 2022 Beaute Luxe. All Right Reserved.</p>
+                  <p class="mt-1 pe-2">© 2022 Beaute Luxe. All Right Reserved.</p>
 
                                     </div>
                                 </ul>

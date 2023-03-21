@@ -303,14 +303,14 @@
 
 .footer-logo-section img {
     width: 40%;
-    margin: 0 auto;
+    margin: 0 90px;
     /* height: 70px; */
 }
 
 .footer-logo-section p {
     margin: 0 30px;
-    font-size: 18px;
-    text-align: center;
+    font-size: 12px;
+
 }
 
 .child-foot p {
